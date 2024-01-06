@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Absensi Siswa</title>
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #275FA3;
+            font-family:sans-serif;
+        }
+        .container {
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 0 0 10px black;
+            overflow: hidden;
+        }
+        .login-box {
+            padding: 20px;
+            width: 400px;
+            height: 400px;
+        }
+        h2 {
+            text-align: center;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            padding-top: 80px;
+        }
+        label {
+            margin: 8px;
+        }
+        input {
+            padding: 8px;
+            margin-bottom: 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button {
+            padding: 10px;
+            background-color: #4caf50;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        img {
+            width: 150px;
+            height: 150px;
+            position: absolute;
+            top: 30px;
+            left: calc(50% - 50px);
+        }
+    </style>
+</head>
+<body>
+   <div class="container">
+    <div class="login-box">
+        <img src="image/logo-removebg-preview.png" alt="logo sekolah">
+        <form action="#">
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username">
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password">
+            <button type="submit">submit</button>
+        </form>
+    </div>
+   </div>
+</body>
+</html>
