@@ -1,0 +1,20 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body {
+    margin: 0;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: #275FA3;
+    display: 10px;
+    color: white;
+}
+h3 {
+    padding: 10px;
+}
+ul {
+    list-style: none;
+    display: flex;
+}

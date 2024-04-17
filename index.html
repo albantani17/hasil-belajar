@@ -2,9 +2,12 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content=width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0 name=viewport />
     <title>Absensi Siswa</title>
     <style>
+        * {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
         body {
             padding: 0;
             margin: 0;
@@ -14,17 +17,20 @@
             height: 100vh;
             background-color: #275FA3;
             font-family:sans-serif;
+            zoom: 100%;
         }
         .container {
+            width: 400px;
+            height: 400px;
+
+        }
+        .login-box {
             background-color: white;
             border-radius: 15px;
             box-shadow: 0 0 10px black;
             overflow: hidden;
-        }
-        .login-box {
-            padding: 20px;
-            width: 400px;
-            height: 400px;
+            padding: 50px;
+            
         }
         h2 {
             text-align: center;
@@ -32,17 +38,16 @@
         form {
             display: flex;
             flex-direction: column;
-            padding-top: 80px;
+            margin-top: 1em;
         }
         label {
-            margin: 8px;
+            margin: 1vh;
         }
         input {
             padding: 8px;
             margin-bottom: 16px;
             border: 1px solid #ccc;
-            border-radius: 4px;
-            cursor: pointer;
+            border-radius: 4px;           
         }
         button {
             padding: 10px;
@@ -51,6 +56,7 @@
             border: none;
             border-radius: 4px;
             cursor: pointer;
+            margin-top: 15px;
         }
         button:hover {
             background-color: #45a049;
@@ -58,9 +64,23 @@
         img {
             width: 150px;
             height: 150px;
-            position: absolute;
-            top: 30px;
-            left: calc(50% - 50px);
+            position: relative;
+            left: 4.5em;
+            padding: 0px;
+        }
+        .footer {
+            height:1em;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            margin-top: 20px;
+            width: auto 100%;   
+            color: #fff;
+        }
+        input:hover {
+            box-shadow: 10px black;
         }
     </style>
 </head>
@@ -68,14 +88,20 @@
    <div class="container">
     <div class="login-box">
         <img src="image/logo-removebg-preview.png" alt="logo sekolah">
+        <h2 align="center">SMKN 1 PANDEGLANG</h2>
+        <p>Masukkan NISN dan Password yang sudah terdaftar di sekolah</p>
         <form action="#">
-            <label for="username">Username</label>
+            <label for="username">NISN</label>
             <input type="text" id="username" name="username">
             <label for="password">Password</label>
             <input type="password" name="password" id="password">
             <button type="submit">submit</button>
         </form>
-    </div>
+    </div> 
+    <div class="footer">
+    <div> &copy AFN 2024 v0.1</div>
    </div>
+   </div>
+  
 </body>
 </html>
